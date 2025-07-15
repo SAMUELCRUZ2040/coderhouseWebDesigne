@@ -1,0 +1,45 @@
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+
+  &-text {
+    font-style: italic;
+  }
+}
+
+.products-grid-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .product-card {
+      border: 1px solid #eee;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+      }
+
+      h4 {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

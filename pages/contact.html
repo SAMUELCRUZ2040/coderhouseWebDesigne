@@ -22,7 +22,7 @@
             <div class="container">
                 <!-- Logo -->
                 <div class="d-flex align-items-center justify-content-center">
-                    <a class="navbar-brand d-flex align-items-center justify-content-center" href="./index.html">
+                    <a class="navbar-brand d-flex align-items-center justify-content-center" href="../index.html">
                         <img src="../assets/logo.jpg" alt="Shoes Store Logo" width="50" height="50" class="d-inline-block align-text-top rounded me-2">
                         <span class="fw-bold">Shoes Store</span>
                     </a>
@@ -57,12 +57,43 @@
             </div>
         </nav>
         <main>
-            <section>
-                <h1>HI we're in contact</h1>
-            </section>
+<section class="contacto">
+  <div class="contacto-wrapper">
+    <!-- Izquierda -->
+    <div class="contacto-texto">
+      <h1>Contáctanos</h1>
+      <p>
+        ¿Tienes dudas o deseas hacer un pedido? <br />
+        Completa el formulario y nos pondremos en contacto contigo.
+      </p>
+    </div>
+
+    <!-- Derecha -->
+    <div class="contacto-formulario">
+      <form class="contact-form">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre completo</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" />
+        </div>
+
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="correo" placeholder="tucorreo@ejemplo.com" />
+        </div>
+
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+      </form>
+    </div>
+  </div>
+</section>
         </main>
         <footer class="bg-dark text-white pt-5 pb-4">
-            <div class="container text-center text-md-start">
+            <div class="container text-center text-md-start text-white">
                 <div class="row">
                 <!-- Logo y descripción -->
                 <div class="col-md-4 mb-4">

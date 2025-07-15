@@ -1,0 +1,34 @@
+.products-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  background-color: #f0f0f0;
+  padding: 4rem 2rem;
+  text-align: center;
+
+  .benefit {
+    i {
+      font-size: 2.5rem;
+      color: $primary-color;
+      margin-bottom: 0.5rem;
+    }
+
+    h5 {
+      margin: 1rem 0 0.5rem;
+    }
+  }
+
+  @include respond(tablet) {
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+  }
+
+  @include respond(mobile) {
+    padding: 2rem 1rem;
+
+    .benefit i {
+      font-size: 2rem;
+    }
+  }
+}

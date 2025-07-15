@@ -1,0 +1,54 @@
+body {
+  padding: 0;
+  margin: 0;
+  padding-top: 5rem;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+h1, h2 {
+  margin-bottom: 2rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: $primary-color;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+body {
+  padding: 0;
+  margin: 0;
+  padding-top: 5rem;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+h1, h2 {
+  margin-bottom: 2rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: $primary-color;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}

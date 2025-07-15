@@ -1,0 +1,31 @@
+.gallery-section {
+  padding: 4rem 0;
+  background-color: $secondary-color;
+
+  .custom-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+
+    .span-2-center:nth-of-type(4) {
+      grid-column: 1 / 2;
+    }
+
+    .span-2-center:nth-of-type(5) {
+      grid-column: 3 / 4;
+    }
+  }
+}

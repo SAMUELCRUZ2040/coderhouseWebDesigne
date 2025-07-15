@@ -1,89 +1,101 @@
-body{
-    padding: 0;
-    margin: 0;
-    padding-top: 5rem;
-}
-nav {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-nav ul {
-    width: 60%;
-    height: 100%;
-    list-style: none;
-    margin: 0;
-    padding: 3rem 0;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding-left: 5rem;
-}
-nav li {
-    margin-right: 20px;
-}
-nav a {
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 15px;
-}
-nav a:hover {
-    text-decoration: underline;
-}
-nav .logo{
-    width: 40%;
-    height: 100%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-nav .logo img{
-    width: 6rem;
-    height: 6rem;
+body {
+  padding: 0;
+  margin: 0;
+  padding-top: 5rem;
 }
 
 section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding: 4rem 0;
 }
 
-/* Títulos principales */
 h1, h2 {
   margin-bottom: 2rem;
 }
 
-/* Imágenes dentro de las secciones */
+footer a:hover {
+  text-decoration: underline;
+  color: #0d6efd;
+}
+
 section img {
   max-width: 100%;
   height: auto;
   border-radius: 0.5rem;
 }
+
+body {
+  padding: 0;
+  margin: 0;
+  padding-top: 5rem;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+h1, h2 {
+  margin-bottom: 2rem;
+}
+
 footer a:hover {
   text-decoration: underline;
   color: #0d6efd;
 }
-/* Fondo oscuro para la tercera sección */
-.section-dark {
-  background-color: #343a40;
-  color: white;
+
+section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
 }
 
-/* Ajustes para íconos */
-.bi {
-  font-size: 2.5rem;
-  color: #0d6efd;
-  margin-bottom: 1rem;
+nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
-/* cartas */
+nav ul {
+  width: 60%;
+  padding: 3rem 0;
+  padding-left: 5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+nav li {
+  margin-right: 20px;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav .logo {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+nav .logo img {
+  width: 6rem;
+  height: 6rem;
+}
 
 .card {
   border: none;
@@ -92,40 +104,66 @@ footer a:hover {
 .card-text {
   font-style: italic;
 }
+
+.products-grid-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+.products-grid-section .products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.products-grid-section .products-grid .product-card {
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+.products-grid-section .products-grid .product-card:hover {
+  transform: translateY(-5px);
+}
+.products-grid-section .products-grid .product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+.products-grid-section .products-grid .product-card h4 {
+  font-size: 1.1rem;
+}
+
 .gallery-section {
   padding: 4rem 0;
   background-color: #f8f9fa;
 }
-
-.custom-gallery-grid {
+.gallery-section .custom-gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
-
-/* Asegura que las imágenes sean fluidas y bonitas */
-.custom-gallery-grid img {
+.gallery-section .custom-gallery-grid img {
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
-
-.custom-gallery-grid img:hover {
+.gallery-section .custom-gallery-grid img:hover {
   transform: scale(1.03);
 }
-
-/* Para centrar las 2 imágenes de la segunda fila */
-.span-2-center:nth-of-type(4) {
-  grid-column: 1 / 2;
+.gallery-section .custom-gallery-grid .span-2-center:nth-of-type(4) {
+  grid-column: 1/2;
+}
+.gallery-section .custom-gallery-grid .span-2-center:nth-of-type(5) {
+  grid-column: 3/4;
 }
 
-.span-2-center:nth-of-type(5) {
-  grid-column: 3 / 4;
-}
-/* Products hero*/
 .products-hero {
   background-color: #f5f5f5;
   display: flex;
@@ -135,56 +173,34 @@ footer a:hover {
   padding: 2rem;
   text-align: center;
 }
-
 .products-hero-content {
   max-width: 800px;
 }
-
 .products-hero h1 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
 }
-
 .products-hero p {
   font-size: 1.2rem;
   color: #555;
 }
-
-/*products-grid-section */
-
-.products-grid-section {
-  padding: 4rem 2rem;
-  background-color: #ffffff;
+@media (max-width: 768px) {
+  .products-hero {
+    padding: 3rem 2rem;
+  }
+  .products-hero h1 {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .products-hero h1 {
+    font-size: 1.8rem;
+  }
+  .products-hero p {
+    font-size: 0.95rem;
+  }
 }
 
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.product-card {
-  border: 1px solid #eee;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-}
-
-.product-card img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 1rem;
-  border-radius: 0.5rem;
-}
-/* products-benefits */
 .products-benefits {
   display: flex;
   flex-wrap: wrap;
@@ -194,83 +210,87 @@ footer a:hover {
   padding: 4rem 2rem;
   text-align: center;
 }
-
-.benefit i {
+.products-benefits .benefit i {
   font-size: 2.5rem;
   color: #0d6efd;
   margin-bottom: 0.5rem;
 }
-
-.benefit h5 {
+.products-benefits .benefit h5 {
   margin: 1rem 0 0.5rem;
 }
-
-/* ─────────────────────────────────────
-   🧑‍💻 Tablets (pantallas medianas)
-────────────────────────────────────── */
-@media (max-width: 992px) {
-  .products-hero {
-    padding: 3rem 2rem;
-    text-align: center;
-  }
-
-  .products-hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .products-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-  }
-
+@media (max-width: 768px) {
   .products-benefits {
     flex-direction: column;
     padding: 3rem 1.5rem;
-    gap: 2rem;
-  }
-
-  .benefit {
-    width: 100%;
   }
 }
-
-/* ─────────────────────────────────────
-   📱 Teléfonos pequeños
-────────────────────────────────────── */
 @media (max-width: 576px) {
-
-  .products-hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .products-hero p,
-  .product-card p {
-    font-size: 0.95rem;
-  }
-
-  .products-grid-section {
-    padding: 2rem 1rem;
-  }
-
-  .product-card h4 {
-    font-size: 1.1rem;
-  }
-
-  .product-card {
-    padding: 1rem;
-  }
-
   .products-benefits {
     padding: 2rem 1rem;
-    gap: 1.2rem;
   }
-
-  .benefit i {
+  .products-benefits .benefit i {
     font-size: 2rem;
   }
+}
 
-  .products-hero-content {
-    max-width: 90%;
-    margin: 0 auto;
+.contacto {
+  padding: 4rem 2rem;
+}
+.contacto .contacto-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.contacto .contacto-texto {
+  width: 40%;
+}
+.contacto .contacto-texto h1 {
+  color: #0d6efd;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.contacto .contacto-texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.contacto .contacto-formulario {
+  width: 60%;
+}
+.contacto .contacto-formulario .form-label {
+  font-weight: 500;
+}
+.contacto .contacto-formulario input,
+.contacto .contacto-formulario textarea {
+  border: 1px solid rgb(164.7459016393, 200.9221311475, 254.2540983607);
+}
+.contacto .contacto-formulario input:focus,
+.contacto .contacto-formulario textarea:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+.contacto .contacto-formulario button {
+  background-color: #0d6efd;
+  border: none;
+}
+.contacto .contacto-formulario button:hover {
+  background-color: rgb(1.762295082, 87.2336065574, 213.237704918);
+}
+@media (max-width: 768px) {
+  .contacto .contacto-wrapper {
+    flex-direction: column;
+  }
+  .contacto .contacto-texto,
+  .contacto .contacto-formulario {
+    width: 100%;
+  }
+  .contacto .contacto-texto {
+    text-align: center;
   }
 }
+
+/*# sourceMappingURL=global.css.map */
