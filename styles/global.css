@@ -5,7 +5,7 @@ body {
 }
 
 section {
-  min-height: 100vh;
+  height: auto;
   display: flex;
   align-items: center;
   padding: 4rem 0;
@@ -30,13 +30,6 @@ body {
   padding: 0;
   margin: 0;
   padding-top: 5rem;
-}
-
-section {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 4rem 0;
 }
 
 h1, h2 {
@@ -266,7 +259,7 @@ nav .logo img {
 }
 .contacto .contacto-formulario input,
 .contacto .contacto-formulario textarea {
-  border: 1px solid rgb(164.7459016393, 200.9221311475, 254.2540983607);
+  border: 1px solid adjust(#0d6efd, 30%);
 }
 .contacto .contacto-formulario input:focus,
 .contacto .contacto-formulario textarea:focus {
@@ -278,7 +271,7 @@ nav .logo img {
   border: none;
 }
 .contacto .contacto-formulario button:hover {
-  background-color: rgb(1.762295082, 87.2336065574, 213.237704918);
+  background-color: adjust(#0d6efd, 10%);
 }
 @media (max-width: 768px) {
   .contacto .contacto-wrapper {
